@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Igor Yovka">
+
+    <title></title>
+	
+	<link rel="icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+	<link rel="stylesheet" href="./css/bootstrap/3.3.7/bootstrap.min.css"> 
+	<link rel="stylesheet" href="./css/bootstrap/3.3.7/simple-sidebar.css"> 
+	
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!--[if IE 8]> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+	 <![endif]-->
+	     <!-- Custom styles for this template -->
+	<script src="./js/vendor/modernizr-custom.js"></script>
+    <link href="./css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<script>
+		/*window.onload = function() {
+			if ($('html').hasClass('no-svg') || ((navigator.userAgent.indexOf("Safari") != -1) && (navigator.userAgent.indexOf("Chrome") == -1))) {
+				$('.navbar-brand > img').attr('src', './img/header/logo.png');
+				console.log(navigator.userAgent.indexOf("Safari"));
+			}
+		};*/
+
+		if (document.getElementsByTagName('html')[0].className.indexOf('lt-ie9') >= 0) {
+			document.write('<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"><\/script>')
+		} else {
+			document.write('<script src="./js/vendor/jquery-2.2.4.min.js"><\/script>')
+		}
+	</script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="./js/all.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="./js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>

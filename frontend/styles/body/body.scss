@@ -1,0 +1,16 @@
+@import '../body/main';
+
+body {
+	color: $m_color_dark;
+	
+	a, a:link {
+		padding: 0;
+		color: $m_color;
+	}
+	a:hover {
+		padding: 0;
+		color: $m_color_dark;
+		opacity: 1 !important;
+		background: transparent;
+	}
+}
