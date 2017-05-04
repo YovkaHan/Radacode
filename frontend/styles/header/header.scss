@@ -15,13 +15,17 @@
 			
 			color: $color_black;
 			
+			img {
+				float: left;
+			}
+			
 			span {
 				font-size: 27.58px;
 				font-family: 'Biko_Regular';
 				display: inline-block;
 				margin-top: 3px;
 				margin-left: 7px;
-				float: right;
+				float: left;
 			}
 		}
 		
@@ -48,6 +52,7 @@
 					line-height: 0.9;
 					box-sizing: border-box;
 					height: 44px;
+					cursor: pointer;
 					
 					&:hover {
 						border: 3px solid $color_black;
@@ -66,6 +71,57 @@
 					}
 				}
 			}
+		}
+		
+		#menu_burger {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background: rgb(0, 0, 0);
+			
+			ul {
+				display: block;
+				list-style-type: none;
+				margin: 0;
+				margin-top: 0px;
+				padding: 0;
+				color: white;
+				text-align: center;
+				
+				li {
+					display: block;
+					margin: 10px 30px;
+					border: 3px solid transparent;
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 1;
+					box-sizing: border-box;
+					height: 44px;
+					
+					a {
+						display: inline-block;
+						padding: 10px 30px;
+						
+						&:link, &:visited {
+							color: white;
+						}
+					}
+					
+					&:last-child {
+						a {
+							border: 3px solid green;
+						}
+					}
+				}
+			}
+		}
+		#menu_burger.closed {
+			opacity: 0.0;
+		}
+		
+		#menu_burger.opened {
+			z-index: 100;
 		}
 	}
 	.header-main {
@@ -144,4 +200,52 @@
 			top: calc(100% - 55.5px);
 			right: 0
 	}
+}
+
+/*@media screen and (min-width: 992px) {
+}*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.header {
+		.header-top {
+			.header-top-menu {
+				ul {
+					li {
+						padding-right: 20px;
+						padding-left: 20px;
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 700px) {
+	.header {
+		.header-top {
+			text-align: center;
+			
+			.header-top-menu {
+				display: none;
+			}
+		}
+	}
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	.header {
+		.header-top {
+			.header-top-menu {
+			    padding-right: 40px;
+				
+				ul {
+					li {
+						padding-right: 10px;
+						padding-left: 10px;
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 575px) {
 }
