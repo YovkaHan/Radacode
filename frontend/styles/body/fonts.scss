@@ -1,8 +1,10 @@
 //fonts
-/*@font-face {
-    font-family: 'Playfair-Display-Regular';
-    src: url('../fonts/playfairdisplay-regular.eot');
-    src: url('../fonts/playfairdisplay-regular.eot?') format('eot'),
-         url('../fonts/playfairdisplay-regular.woff2') format('woff2'),
-         url('../fonts/playfairdisplay-regular.woff') format('woff'),
-}*/
+@font-face {
+    font-family: 'Biko_Regular';
+    src: url('../fonts/Biko/Biko_Regular.eot');
+    src: url('../fonts/Biko/Biko_Regular.eot?') format('eot'),
+         url('../fonts/Biko/Biko_Regular.woff2') format('woff2'),
+         url('../fonts/Biko/Biko_Regular.woff') format('woff'),
+         url('../fonts/Biko/Biko_Regular.ttf') format('truetype'),
+         url('../fonts/Biko/Biko_Regular.svg#Biko_Regular') format('svg');
+}

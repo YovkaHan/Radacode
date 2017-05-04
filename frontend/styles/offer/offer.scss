@@ -1,0 +1,31 @@
+@import '../body/main';
+
+.offer {	
+	.row {
+		padding: 56px 80px 54px;
+	}
+	#logo2 {
+		display: inline-block;
+		
+		span {    
+			display: inline-block;
+			padding-top: 2px;
+			padding-left: 14px;
+			float: right;				
+			font-size: 59px;
+		}
+	}
+	
+	button{
+		font-size: 30px;
+		background: #347a51;
+		border-radius: 0px;
+		display: block;
+		margin: 20px auto 0;
+		padding: 14px 26px 19px;
+		padding-left: 23px;
+		letter-spacing: -0.75px;
+		margin-left: 80px;
+		line-height: 0.8;
+	}
+}

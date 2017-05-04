@@ -1,0 +1,79 @@
+@import '../body/main';
+
+footer {
+	position: relative;
+	padding: 56px 108px 0px;
+	background: $bg-color-old;
+	@include background-image(radial-gradient(circle  at 42% -100%, $bg-color-secondary 25%, $bg-color 92%));
+	
+	font-weight: 400;
+	
+	.footer-content {
+		padding-top: 40px;
+		
+		.about-info {
+			display: inline-block;
+			font-size: 20px;
+			padding-top: 14px;
+			padding-left: 110px;
+			
+			span {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+		}
+		.socials {
+			display: inline-block;
+			float: right;
+			margin-right: 140px;
+			padding-top: 4px;
+			
+			.icons-custom {
+				display: inline-block;
+				height: 47px;
+				padding-right: 47px;
+				margin-left: 41px;
+				margin-right: 41px;
+			}
+			.icons-fb {
+				background: url(../img/footer/fb.png) no-repeat;
+			}
+			.icons-gp {
+				background: url(../img/footer/gp.png) no-repeat;
+			}
+			.icons-tw {
+				background: url(../img/footer/tw.png) no-repeat;
+			}
+		}
+	}
+	.cpr{
+			display: block;
+			text-align: center;
+			padding-top: 40px;
+			padding-bottom: 20px;
+			font-size: 18px;
+	}
+	
+	&:before {
+		    content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 56px solid white;
+			border-right: 50vw solid transparent;
+			position: absolute;
+			top: -1px;
+			left: 0;
+	}
+	&:after {
+		    content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 56px solid white;
+			border-left: 50vw solid transparent;
+			position: absolute;
+			top: -1px;
+			right: 0
+	}
+}

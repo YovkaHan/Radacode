@@ -14,7 +14,7 @@ module.exports = function(options) {
 			$.sass({
 				includePaths: require('node-bourbon').includePaths
 			}),
-			$.autoprefixer(),
+			$.autoprefixer({ browsers: ['iOS 5', 'ie 9']}),
 			$.remember(options.name),
 			$.concat('all.min.css'),
 			$.if(!(options.isDevelopment),$.rev()),
