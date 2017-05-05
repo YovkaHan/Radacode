@@ -1,13 +1,15 @@
 @import '../body/main';
 
 .offer {	
+	text-align: initial;
+	
 	.row {
 		padding: 56px 80px 54px;
 	}
 	#logo2 {
 		display: inline-block;
 		
-		span {    
+		.logo {    
 			display: inline-block;
 			padding-top: 2px;
 			padding-left: 14px;
@@ -30,6 +32,89 @@
 		
 		&:hover {
 			color: $bg-color-content;
+		}
+	}
+}
+
+/*@media screen and (min-width: 992px) {
+}*/
+@media screen and (max-width: 991px) {
+	.offer {	
+		.row {
+			padding: 56px 60px 54px;
+		}
+		
+		button{
+			margin-left: 0px;
+	
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.offer {	
+		padding-bottom: 30px !important;
+		
+		.row {
+			padding: 30px 15px ;
+			text-align: center;
+		}
+		#logo2 {
+			display: inline-block;
+			
+			img {
+				width: 66px;
+			}
+
+			.logo {    
+				font-size: 50px;
+			}
+		}
+		
+		button{
+			display: inline-block;
+			margin-left: 0px;
+			font-size: 36px;
+			font-weight: 600;
+			margin: 36px auto 0;
+			padding: 15px 36px 20px;
+			letter-spacing: -0.75px;
+			line-height: 1.0;
+			
+		}
+	}
+}
+@media screen and (max-width: 350px) {
+	.offer {	
+		padding-bottom: 30px !important;
+		
+		.row {
+			padding: 30px 15px ;
+			text-align: center;
+		}
+		#logo2 {
+			display: inline-block;
+			
+			img {
+				width: 66px;
+			}
+
+			.logo {    
+				font-size: 50px;
+			}
+		}
+		
+		button{
+			display: inline-block;
+			margin-left: 0px;
+			font-size: 30px;
+			font-weight: 600;
+			background: #347a51;
+			border-radius: 0px;
+			margin: 36px auto 0;
+			padding: 15px 36px 20px;
+			letter-spacing: -0.75px;
+			line-height: 1.0;
+			
 		}
 	}
 }

@@ -35,3 +35,105 @@
 		margin-top: 13px;
 	}
 }
+
+/*@media screen and (min-width: 992px) {
+}*/
+@media screen and (max-width: 991px) {
+	.content {
+	
+		.content-part {
+
+			&:last-child {
+
+			}
+		}
+		.features {
+			.row {
+				
+				div:first-child {
+					margin-top: 297px;
+				}
+				div:last-child {
+					margin-top: -593px;
+				}
+			}
+		}
+		
+		.col-custom{
+			margin-left: 0px;
+		}
+		
+		h3 {
+			margin-bottom: 30px;
+		}
+		p {
+
+		}
+		
+		#laptop {
+			margin-left: 0px;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 575px) {
+	.content {
+
+		.features {
+			.row {
+				
+				div:first-child {
+					margin-top: 250px;
+				}
+				div:last-child {
+					margin-top: -540px;
+				}
+			}
+		}
+		
+		h3 {
+			margin-bottom: 20px;
+		}
+		p {
+			min-width: inherit;
+			padding: 0 20px;
+			font-size: 18px;
+		}
+		
+		#laptop {
+			margin-top: 25px;
+			width: 76%;
+		}
+	}
+}
+@media screen and (max-width: 420px) {
+	.content {
+
+		.features {
+			.row {
+				
+				div:first-child {
+					margin-top: 200px;
+				}
+				div:last-child {
+					margin-top: -490px;
+				}
+			}
+		}
+		
+		h3 {
+			margin-bottom: 20px;
+		}
+		p {
+			min-width: inherit;
+			padding: 0 20px;
+			font-size: 14px;
+		}
+		
+		#laptop {
+			margin-top: 25px;
+			width: 76%;
+		}
+	}
+}

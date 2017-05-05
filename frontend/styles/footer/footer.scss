@@ -2,14 +2,13 @@
 
 footer {
 	position: relative;
-	padding: 56px 108px 0px;
 	background: $bg-color-old;
 	@include background-image(radial-gradient(circle  at 42% -100%, $bg-color-secondary 25%, $bg-color 92%));
 	
 	font-weight: 400;
 	
 	.footer-content {
-		padding-top: 40px;
+		padding-top: 96px;
 		
 		.about-info {
 			display: inline-block;
@@ -22,9 +21,6 @@ footer {
 				padding-right: 30px;
 				cursor: pointer;
 				
-				&:hover {
-				
-				}
 			}
 		}
 		.socials {
@@ -80,5 +76,64 @@ footer {
 			position: absolute;
 			top: -1px;
 			right: 0
+	}
+}
+
+/*@media screen and (min-width: 992px) {
+}*/
+@media screen and (max-width: 991px) {
+	footer {
+		padding-left: 20px;
+		
+		.footer-content {
+			padding-top: 80px;
+			
+			.about-info {
+				padding-left: 0px;
+
+			}
+			.socials {
+				margin-right: 40px;
+				
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	footer {
+		padding-left: 0px;
+		
+		.footer-content {
+			padding-top: 60px;
+			
+			.about-info {
+				display: block;
+				text-align: center;
+				margin-bottom: 26px;
+				
+			}
+			.socials {
+				display: block;
+				margin-right: 0px;
+				float: none;
+				text-align: center;
+			}
+		}
+		
+		&:after {
+			right: -1px;
+		}
+	}
+}
+@media screen and (max-width: 575px) {
+	footer {
+		.footer-content {
+			.socials {
+				.icons-custom{
+					margin-left: 26px;
+					margin-right: 26px;
+				}
+			}
+		}
 	}
 }

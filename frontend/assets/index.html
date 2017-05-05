@@ -84,7 +84,7 @@
 			<div class="content-part features">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12 col-custom">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-custom">
 							<h3>Features:</h3>
 							<p>
 								Screen blocking during break exercises.<br>
@@ -96,7 +96,7 @@
 								and more...
 							</p>
 						</div>
-						<div class="col-lg-5 col-md-5 col-sm-12 ">
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 							<img id="laptop" src="./img/content/laptop.png" alt="laptop.png">
 						</div>
 					</div>
@@ -105,10 +105,10 @@
 			<div class="content-part offer">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-7">
-							<div id="logo2"><img src="./img/offer/logo-2.png" alt="logo-2.png"><span>EyeLeo</span></div>
+						<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+							<div id="logo2"><img src="./img/offer/logo-2.png" alt="logo-2.png"><span class="logo"><span class="logo-text">EyeLeo</span></span></div>
 						</div>
-						<div class="col-lg-5">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
 							<button class="btn">Buy Now</button>
 						</div>
 					</div>
@@ -134,13 +134,6 @@
 	</footer>
 
 	<script>
-		/*window.onload = function() {
-			if ($('html').hasClass('no-svg') || ((navigator.userAgent.indexOf("Safari") != -1) && (navigator.userAgent.indexOf("Chrome") == -1))) {
-				$('.navbar-brand > img').attr('src', './img/header/logo.png');
-				console.log(navigator.userAgent.indexOf("Safari"));
-			}
-		};*/
-
 		if (document.getElementsByTagName('html')[0].className.indexOf('lt-ie9') >= 0) {
 			document.write('<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"><\/script>')
 		} else {

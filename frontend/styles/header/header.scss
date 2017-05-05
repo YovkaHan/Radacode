@@ -134,15 +134,19 @@
 		}
 				
 		#logoMain {
+		    position: relative;
 			margin-left: 64px;
 			margin-top: 48px;
+			z-index: 1;
 		}
 		
 		h2 {
+			position: relative;
 			font-size: 36px;
 			letter-spacing: -0.6px;
 			margin-left: 111px;
 			margin-top: 11px;
+			z-index: 10;
 		}
 		
 		#pow-1{
@@ -171,7 +175,7 @@
 		}
 		
 		p {
-			padding: 40px 55px 25px 20px;
+			padding: 40px 55px 20px 20px;
 			font-size: 22px;
 			text-align: center;
 			line-height: 25px;
@@ -204,7 +208,7 @@
 
 /*@media screen and (min-width: 992px) {
 }*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
 	.header {
 		.header-top {
 			.header-top-menu {
@@ -217,10 +221,52 @@
 				}
 			}
 		}
+		.header-main {
+			
+			.pows{
+				width: 45px;
+			}
+					
+			#logoMain {
+				width: 55%;
+			}
+			
+			h2 {
+				font-size: 30px;
+			}
+			
+			#pow-1{
+				right: 220px;
+			}
+			#pow-2{
+				top: 95px;
+				right: 155px;
+			}
+			#pow-3{
+				right: 90px;
+			}
+			#pow-4{
+				right: 25px;
+			}
+			#pow-5{
+				right: 10px;
+			}
+			#pow-6{
+
+			}
+			
+			p {
+				font-size: 20px;
+			}
+		}
+		
 	}
 }
 @media screen and (max-width: 700px) {
 	.header {
+		#headerLogo {
+			margin-left: 0px !important;
+		}
 		.header-top {
 			text-align: center;
 			
@@ -230,7 +276,7 @@
 		}
 	}
 }
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 	.header {
 		.header-top {
 			.header-top-menu {
@@ -245,7 +291,88 @@
 				}
 			}
 		}
+		.header-main {
+		
+			h2 {
+				font-size: 28px;
+				margin-left: 55px;
+			}
+			
+			.pows{
+				width: 40px;
+			}
+			
+			#pow-1{
+				right: 160px;
+			}
+			#pow-2{
+				top: 100px;
+				right: 105px;
+			}
+			#pow-3{
+				right: 60px;
+			}
+			#pow-4{
+				right: 25px;
+			}
+			#pow-5{
+				right: 10px;
+			}
+			#pow-6{
+
+			}
+			
+			#logoMain {
+				width: 55%;
+			}
+			
+			p {
+				padding-top: 30px;
+				padding-left: 15px;
+				font-size: 18px;
+				font-weight: 400;
+			}
+		}
+		&:before {
+			top: calc(100% - 54.5px);
+		}
+		&:after {
+			border-bottom: 56px solid white;
+			border-left: 51vw solid transparent;
+			right: -1px;
+			top: calc(100% - 54.5px);
+		}
 	}
 }
 @media screen and (max-width: 575px) {
+	.header {
+		.header-top {
+
+		}
+		.header-main {
+		
+			h2 {
+				margin-left: 0px;
+				text-align: center;
+				font-size: 24px;
+			}
+			
+			.pows{
+				display: none;
+			}
+			
+			#logoMain {
+				display: block;
+				width: 70%;
+				margin: 40px auto 20px;
+			}
+			
+			p {
+				padding-top: 20px;
+				padding-left: 20px;
+				padding-right: 20px;
+				font-size: 15px;
+			}
+		}
+	}
 }
